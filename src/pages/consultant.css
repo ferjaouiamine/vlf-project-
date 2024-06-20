@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/static/Inter-Regular.ttf') format('truetype');
+    /* Add other font weights and styles here if needed */
+  }
+
+.headersStyle {
+    color: 'black';
+    margin-top: '4rem';
+    font-family: 'Inter'/* Updated font-family */;
+    margin-bottom: '5rem';
+  };
