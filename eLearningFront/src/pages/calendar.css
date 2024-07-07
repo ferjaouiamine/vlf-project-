@@ -1,0 +1,17 @@
+.css-s22wio > div > span {
+    display: none !important;
+}
+
+.contact {
+    width:170px;
+}
+.contact:hover {
+    background-color: #C8C4C3 !important;
+}
+.contactList {
+display: flex;
+margin-bottom: 2%;
+}
+/* .contactList :hover {
+    background-color: #C8C4C3;
+} */
