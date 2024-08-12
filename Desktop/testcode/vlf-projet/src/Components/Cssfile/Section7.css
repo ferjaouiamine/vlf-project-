@@ -1,0 +1,257 @@
+.section7 {
+    position: relative;
+    width: 100%;
+    height: 150vh; /* Sufficient height for all content */
+    background-color: rgba(14, 152, 134, 0.9); /* Slightly transparent background color */
+    overflow: hidden;
+    text-align: center;
+    color: #FFFFFF; /* Text color */
+    font-family: 'Arial', sans-serif;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.6; /* Background image transparency */
+}
+
+.section7-content {
+    position: relative;
+    z-index: 2; /* Content above background image */
+    max-width: 1100px; /* Content container width */
+    margin: 0 auto;
+    padding: 60px 20px; /* Adjusted padding */
+}
+
+.section7-title {
+    font-size: 3rem; /* Adjusted font size */
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.highlight {
+    color: #FFD700; /* Highlight color for "PARTENARIATS" */
+}
+
+.section7-subtitle {
+    font-size: 1.5rem; /* Adjusted font size for subtitle */
+    margin-bottom: 40px; /* Spacing below subtitle */
+    line-height: 1.5;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; /* Spacing below statistics */
+}
+
+.stat {
+    margin: 0 20px; /* Spacing between statistics */
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 6rem; /* Large font size for numbers */
+    font-weight: bold;
+    color: #FFD700; /* Yellow color for numbers */
+    margin-bottom: 10px; /* Spacing below numbers */
+}
+
+.stat-label {
+    font-size: 1.5rem; /* Font size for labels */
+    line-height: 1.2;
+}
+
+.and-symbol {
+    font-size: 4rem; /* Font size for "&" symbol */
+    font-weight: bold;
+    color: #FFFFFF; /* Color for "&" symbol */
+}
+
+.section7-text {
+    color: #ffffff;
+    padding: 8px 30px;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    border-radius: 13px;
+    max-width: 1000px;
+    margin: 7px auto;
+    line-height: 1.5;
+    background-size: auto;
+    background-position: center;
+}
+
+/* Text "ont mené des actions de changement" with 'jauneback' background */
+.section7-text.ont-mene {
+    background-image: url('../Pic/jauneback.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%; /* Adjust width to match the design */
+}
+
+/* Text "dans 13 gouvernorats du pays" with 'noirback' background */
+.section7-text.dans-gouvernorats {
+    background-image: url('../Pic/noirback.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%; /* Adjust width to match the design */
+}
+
+.handshake-container {
+    position: absolute;
+    bottom: -70%; /* Position above the partner list */
+    left: 40%;
+    transform: translateX(-50%);
+    z-index: 1; /* Positioned under text but above background image */
+    opacity: 0.7; /* Handshake image transparency */
+}
+
+.handshake-image {
+    width: 300%; /* Width of the handshake image */
+    max-width: 1000px;
+    height: auto;
+    opacity: 1; /* Fully visible */
+}
+
+.partners-list {
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    line-height: 1.6;
+    margin-top: 18px;
+    z-index: 14;
+    position: absolute;
+    bottom: -500px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    max-width: 1000px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 1024px) {
+    .section7-title {
+        font-size: 2.8rem;
+    }
+
+    .stat-number {
+        font-size: 5rem;
+    }
+
+    .stat-label {
+        font-size: 1.3rem;
+    }
+
+    .and-symbol {
+        font-size: 3.5rem;
+    }
+
+    .section7-text {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .handshake-container {
+        bottom: -50%;
+        left: 50%;
+    }
+
+    .handshake-image {
+        width: 200%;
+        max-width: 900px;
+    }
+
+    .partners-list {
+        font-size: 1.5rem;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section7-content {
+        padding: 30px 15px;
+    }
+
+    .section7-title {
+        font-size: 2.5rem;
+    }
+
+    .stat-number {
+        font-size: 4rem;
+    }
+
+    .stat-label {
+        font-size: 1.2rem;
+    }
+
+    .and-symbol {
+        font-size: 2.5rem;
+    }
+
+    .section7-text {
+        font-size: 1.1rem;
+        padding: 8px;
+        background-size: cover; /* Ensures background image covers text area */
+    }
+
+    .handshake-container {
+        bottom: -30%;
+        left: 50%;
+    }
+
+    .handshake-image {
+        width: 150%;
+        max-width: 700px;
+    }
+
+    .partners-list {
+        font-size: 1.3rem;
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section7-title {
+        font-size: 2rem;
+    }
+
+    .stat-number {
+        font-size: 3.5rem;
+    }
+
+    .stat-label {
+        font-size: 1.2rem;
+    }
+
+    .and-symbol {
+        font-size: 2rem;
+    }
+
+    .section7-text {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .handshake-container {
+        bottom: -20%;
+        left: 50%;
+    }
+
+    .handshake-image {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    @media (max-width: 480px) {
+        .partners-list {
+            font-size: 1.2rem;
+            bottom: -387px;
+        }
+    }
+}

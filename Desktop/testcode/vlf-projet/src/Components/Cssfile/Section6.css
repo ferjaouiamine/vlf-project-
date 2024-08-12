@@ -1,0 +1,142 @@
+/* Section 6 Styles */
+.section6 {
+    position: relative;
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #8770B9;
+    overflow: hidden;
+    height: 100vh; /* Full viewport height for desktop */
+}
+
+.background-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.section6-content {
+    z-index: 2;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+/* Title Images */
+.comment-title {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 20%; 
+}
+
+.ellesont-title {
+    position: absolute;
+    top: 20%; 
+    left: 30%;
+    width: 20%; 
+}
+
+.tunisie-title {
+    position: absolute;
+    top: 32%; 
+    left: 15%;
+    width: 45%; 
+}
+
+.question-mark-section6 {  
+    position: absolute;
+    top: 5%;
+    right: 40%;
+    width: 10%; 
+}
+
+/* Description Images */
+.description1 {
+    position: absolute;
+    bottom: 50%; 
+    left: 15%;
+    width: 50%; 
+}
+
+.description2 {
+    position: absolute;
+    bottom: 40%; 
+    left: 15%;
+    width: 50%; 
+}
+
+/* Decoration Images */
+.star {
+    position: absolute;
+    left: 10%;
+    top: 45%; 
+    width: 3%; 
+}
+
+.flower {
+    position: absolute;
+    left: 10%;
+    top: 55%; 
+    width: 3%; 
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    .section6 {
+        padding: 20px 10px;
+        height: 100%; /* Adjust height to content size */
+    }
+
+    .comment-title {
+        width: 70%;
+        top: 10%;
+        left: 15%;
+    }
+
+    .ellesont-title {
+        width: 70%;
+        top: 30%;
+        left: 15%;
+    }
+
+    .tunisie-title {
+        width: 80%;
+        top: 50%;
+        left: 10%;
+    }
+
+    .question-mark-section6 {
+        width: 20%;
+        top: 60%;
+        right: 10%;
+    }
+
+    .description1, .description2 {
+        width: 90%;
+        left: 5%;
+        top: 70%;
+    }
+
+    .star {
+        width: 10%;
+        left: 20%;
+        top: 80%;
+    }
+
+    .flower {
+        width: 10%;
+        left: 60%;
+        top: 85%;
+    }
+}

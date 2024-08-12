@@ -1,0 +1,12 @@
+.footer-section {
+    width: 100vw;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffeb3b;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.5rem;
+    color: #004d40;
+  }
+  

@@ -1,0 +1,155 @@
+.section3 {
+  width: 100%;
+  padding: 50px 20px;
+  background-color: #73BCB3;
+  position: relative;
+  overflow: hidden;
+}
+
+.section3-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px;
+  z-index: 2;
+}
+
+.text-left {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.atraver-img {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.text-right {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-image: url('../Pic/circles.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  z-index: 1;
+}
+
+.funds-info {
+  display: flex;
+  align-items: center;
+  transform: rotate(-10deg);
+  margin-left: 20px;
+}
+
+.number-img {
+  width: 80px;
+  margin-right: 10px;
+}
+
+.funds-img {
+  width: 150%;
+}
+
+.fund-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.fund-item {
+  margin-bottom: 20px;
+}
+
+.fund-img {
+  width: 100%;
+}
+
+.arrow-container {
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.arrow {
+  font-size: 3rem;
+  color: #FFD700;
+  transform: rotate(-10deg);
+  text-shadow: 0px 0px 10px #FFD700;
+  transition: transform 0.3s ease-out;
+}
+
+@media (min-width: 1200px) {
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .number-img {
+    width: 100px;
+  }
+
+  .funds-img {
+    width: 200px;
+  }
+
+  .fund-item img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .section3-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-left, .text-right {
+    text-align: center;
+    align-items: center;
+  }
+
+  .atraver-img {
+    max-width: 200px;
+  }
+
+  .number-img {
+    width: 50px;
+  }
+
+  .funds-img {
+    width: 100px;
+  }
+
+  .fund-item img {
+    width: 100%;
+  }
+
+  .background-image {
+    display: none;
+  }
+
+  .arrow-container {
+    bottom: 50px;
+  }
+}

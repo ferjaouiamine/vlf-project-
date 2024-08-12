@@ -1,0 +1,97 @@
+.section2 {
+  width: 100%;
+  padding: 5vh 5vw;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+  background-image: url('../Pic/Groupe_de_masques_2.png'); /* Image de fond */
+}
+
+.section2-content {
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+  padding: 5vw;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phrase-container {
+  margin-bottom: 0; /* Pas de marge entre les boîtes */
+  position: relative;
+  z-index: 2;
+}
+
+.phrase-box {
+  padding: 1vh 2vw;
+  border-radius: 0; /* Pas de bordure arrondie pour coller à la maquette */
+  font-size: 3vw; /* Taille de texte ajustée selon la maquette */
+  color: white;
+  text-align: center;
+  line-height: 1.2;
+  transform: rotate(-3deg); /* Ajout d'une légère inclinaison */
+  box-shadow: none; /* Pas d'ombre pour un style plus propre */
+  transition: transform 0.3s ease;
+}
+
+.green-box {
+  background-color: #A4C33A;
+  height: auto;
+  width: 100%;
+}
+
+.cyan-box {
+  background-color: #00AFA0;
+  height: auto;
+  width: 100%;
+  transform: rotate(-4deg); /* Légère inclinaison dans l'autre sens */
+}
+
+.purple-box {
+  background-color: #662D91;
+  height: auto;
+  width: 100%;
+  transform: rotate(-4deg); /* Légère inclinaison dans un autre sens */
+}
+
+.phrase-box:hover {
+  transform: rotate(0deg) scale(1.05); /* Redressement au survol */
+}
+
+.question-mark.section2-question-mark {
+  width: 4vw;
+  position: absolute;
+  top: -2vh;
+  right: 5vw; /* Placement spécifique pour la section 2 */
+  filter: brightness(0) saturate(100%) invert(92%) sepia(100%) saturate(217%) hue-rotate(1deg) brightness(109%) contrast(104%);
+}
+
+@media (min-width: 1200px) {
+  .phrase-box {
+    font-size: 2vw;
+    padding: 2vh 4vw;
+  }
+
+  .question-mark {
+    width: 3vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .phrase-box {
+    font-size: 5vw; /* Taille de texte plus grande pour assurer la lisibilité */
+    padding: 1vh 2vw; /* Réduction du padding */
+  }
+
+  .green-box, .cyan-box, .purple-box {
+    width: 100%; /* Boîtes prennent toute la largeur */
+    height: auto;
+  }
+
+  .question-mark {
+    width: 8vw;
+  }
+}

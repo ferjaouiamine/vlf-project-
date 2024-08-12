@@ -1,0 +1,104 @@
+.navbar {
+  position: absolute; /* Position absolue pour rester sur le header */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent; /* Fond transparent */
+  padding: 15px 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end; /* Aligne les éléments à droite */
+  align-items: center;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10px 20px;
+}
+
+.navbar-left {
+  flex: 1; /* Occupe l'espace à gauche */
+}
+
+.vlf-button {
+  background-color: transparent; /* Fond transparent pour le bouton VLF */
+  color: #FFFFFF; /* Couleur du texte blanche pour correspondre à la maquette */
+  font-weight: bold;
+  font-size: 1.5rem; /* Taille du texte ajustée */
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  position: absolute;
+  left: 20px; /* Ajuste le bouton à gauche */
+}
+
+.vlf-button:hover {
+  color: #FFD700; /* Changement de couleur au survol */
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: flex-end; /* Aligne les liens à droite */
+  gap: 40px; /* Espacement entre les éléments */
+  margin-right: 40px; /* Espace à droite */
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #FFFFFF; /* Couleur du texte blanche */
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #FFD700; /* Couleur au survol */
+  transform: translateY(-2px); /* Légère élévation au survol */
+}
+
+/* Responsive Styles */
+
+/* Écrans moyens (tablettes en paysage) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .navbar-links {
+    gap: 30px;
+  }
+
+  .navbar-links li a {
+    font-size: 1rem;
+  }
+}
+
+/* Petits écrans (mobiles) */
+@media (max-width: 767px) {
+  .navbar {
+    padding: 10px 15px;
+    justify-content: center; /* Centre les éléments pour les petits écrans */
+  }
+
+  .navbar-links {
+    flex-direction: column; /* Empile les liens verticalement */
+    gap: 20px;
+    align-items: center; /* Centre les liens */
+  }
+
+  .navbar-links li a {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .navbar-left {
+    display: none; /* Masquer le bouton VLF sur mobile */
+  }
+
+  .vlf-button {
+    left: 50%;
+    transform: translateX(-50%); /* Centre le bouton pour les petits écrans */
+    font-size: 1.3rem; /* Réduire la taille du texte pour s'adapter à l'écran */
+  }
+}
